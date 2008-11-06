@@ -90,7 +90,7 @@ Mew.extend(Mew.Kernel.prototype, {
         return this;
       },
       curry : function() {
-        this.args.concat(arguments);
+        this.args.concat(Mew.array(arguments));
         return this;
       },
       curring: function(args) {
